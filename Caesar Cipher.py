@@ -33,6 +33,8 @@ def decrypt(message, key):
     return vigenere(message, key, -1)
 
 
+##First Project that I need to look at more because something seems off.
+
 print(f"\nEncrypted text: {text}")
 print(f"Key: {custom_key}")
 decryption = decrypt(text, custom_key)
