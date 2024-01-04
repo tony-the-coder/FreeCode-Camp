@@ -30,5 +30,7 @@ def main():
 
 
 ##Second FCC Project for Python Track
+##Testing Github because VSCode is not acting properly
+##First commit did not commit properly
 
 main()
