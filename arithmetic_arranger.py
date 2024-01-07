@@ -26,12 +26,21 @@ def arithmetic_arranger(problems):
         first_number.append(problem[0])
         operator.append(problem[1])
         second_number.append(problem[2])
+        print(operator)
 
     # checking to see if the operator is only a + or a - but this does not look effiecent as there could be something that could have been passed instead of the two operators
     # 1
     # //TODO: #2 Fix the filtery thing down here
     if "*" in operator or "/" in operator:
         return "Error: Operator must be '+' or '-'."
+
+    # if not (first_number[0].isdigit() or second_number[2].isdigit()):
+    #     return "Error: Numbers must only contain digits."
+    # After some research I found something that might be better
+    if not all(
+        x.isdigit() and y.isdigit() for x, y in zip(first_number, second_number)
+    ):
+        return "Error: Numbers must only contain digits."
 
 
 print(arithmetic_arranger(["32 - 698", "3801 - 2", "45 - 43", "123 + 49"]))
