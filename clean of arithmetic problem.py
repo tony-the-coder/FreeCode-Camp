@@ -13,7 +13,7 @@ def arithmetic_arranger(problems):
         operator.append(problem[1])
         second_number.append(problem[2])
     # 1
-    print(first_number)
+
     if "*" in operator or "/" in operator:
         return "Error: Operator must be '+' or '-'."
 
@@ -22,8 +22,8 @@ def arithmetic_arranger(problems):
     ):
         return "Error: Numbers must only contain digits."
 
-    if not all(map(lambda x, y: len(x) or len(y) < 5, first_number, second_number)):
+    if not all(map(lambda x, y: len(x) and len(y) < 5, first_number, second_number)):
         return "Error: Numbers cannot be more than four digits."
 
 
-print(arithmetic_arranger(["311#1112 - 62398", "3801 - 2", "45 - 43", "123 + 49"]))
+print(arithmetic_arranger(["3111112 - 62398", "3801 - 2", "45 - 43", "123 + 49"]))
