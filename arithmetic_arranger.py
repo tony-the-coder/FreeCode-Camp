@@ -69,4 +69,4 @@ def arithmetic_arranger(problems, final_answer=True):
     return arranged_problems
 
 
-print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
+print(arithmetic_arranger(["3111 - 3110", "3801 - 2", "45 - 43", "123 + 49"]))
