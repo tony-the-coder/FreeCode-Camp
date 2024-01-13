@@ -45,7 +45,7 @@ def arithmetic_arranger(problems, final_answer=True):
             formatted_problems.append([first_line, second_line, dashes, answer_line])
         else:
             formatted_problems.append([first_line, second_line, dashes])
-
+    print(formatted_problems)
     first_line = "    ".join([problem[0] for problem in formatted_problems])
     second_line = "    ".join([problem[1] for problem in formatted_problems])
     dashes = "    ".join([problem[2] for problem in formatted_problems])

@@ -78,4 +78,5 @@ def arithmetic_arranger(problems, final_answer=True):
     return arranged_problems
 
 
-print(arithmetic_arranger(["3111 - 3110", "3801 - 2", "45 - 43", "123 + 49"]))
+# print(arithmetic_arranger(["11 + 4", "3801 - 2999", "1 + 2", "123 + 49", "1 - 9380"]))
+print(arithmetic_arranger(["11 + 4", "3801 - 2999", "1 + 2", "123 + 49", "1 - 9380"]))
